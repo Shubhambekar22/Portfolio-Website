@@ -56,6 +56,22 @@ export const resumeData = {
         "Quality and Reliability Engineering",
       ],
     },
+    {
+      school: "PCET's Pimpri Chinchwad Polytechnic",
+      degree: "Diploma in Mechanical Engineering",
+      date: "2017 - 2021",
+      location: "Pune, India",
+      gpa: "First Class w/ Distinction",
+      logo: "/pcet-logo.jpg",
+      coursework: [
+        "Introduction to Heat Transfer",
+        "Solid Mechanics",
+        "Engineering Drawing",
+        "Industrial Hydraulics and Pneumatics",
+        "Advance Manufacturing Processes",
+        "Basics of Fluids in Engineering",
+      ],
+    },
   ],
   experience: [
     {
