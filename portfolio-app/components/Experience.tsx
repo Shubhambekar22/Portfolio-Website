@@ -32,7 +32,10 @@ export default function Experience() {
                   <div className="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-slate-700 group-hover:border-cyan-500 transition-colors" />
                   <div className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-slate-700 group-hover:border-cyan-500 transition-colors" />
 
-                  <span className="inline-block px-3 py-1 mb-4 text-xs font-mono font-bold text-cyan-400 bg-cyan-950/30 border border-cyan-500/20 rounded-full">
+                  <span className="inline-flex items-center gap-2 text-cyan-400 text-sm font-mono bg-cyan-950/30 px-3 py-1 border border-cyan-500/20 rounded-md w-fit whitespace-nowrap mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
                     {exp.date}
                   </span>
                   
