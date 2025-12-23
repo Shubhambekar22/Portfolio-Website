@@ -16,7 +16,7 @@ export default function Experience() {
 
   return (
     <Section id="experience" number="03" title="Professional Experience" subtitle="Career Trajectory">
-      <div ref={containerRef} className="relative space-y-12">
+      <div ref={containerRef} className="relative space-y-12 mb-12">
         {/* Timeline Line (Static) */}
         <div className="absolute top-0 bottom-0 left-[7px] w-px bg-slate-800 md:left-[50%] md:-ml-px" />
         
@@ -29,6 +29,36 @@ export default function Experience() {
         {resumeData.experience.map((exp, index) => (
           <ExperienceCard key={index} exp={exp} index={index} />
         ))}
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mt-16 w-full max-w-4xl mx-auto">
+           <div className="flex justify-center md:justify-end">
+            <a 
+                href="/resume.pdf" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 px-8 py-3 rounded-lg border border-slate-700 bg-slate-950/50 text-white font-bold uppercase tracking-wider hover:bg-slate-900 hover:-translate-y-1 transition-all duration-300 w-full md:w-auto"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+                View Resume
+            </a>
+          </div>
+          
+           <div className="flex justify-center md:justify-start">
+            <a 
+                href="/resume.pdf" 
+                download="Shubham_Ambekar_Resume.pdf"
+                className="flex items-center justify-center gap-2 px-8 py-3 rounded-lg bg-white text-blue-600 font-bold uppercase tracking-wider hover:bg-blue-50 hover:-translate-y-1 transition-all duration-300 w-full md:w-auto"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Download Resume
+            </a>
+           </div>
       </div>
     </Section>
   );
