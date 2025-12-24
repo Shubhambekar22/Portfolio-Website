@@ -134,7 +134,7 @@ export const resumeData = {
     {
       title: "AI Assisted Planar Slicing for 3D Printing",
       date: "Sep 2025 – Dec 2025",
-      tags: ["AI", "3D Printing", "Algorithms", "Python"],
+      tags: ["AI", "3D Printing", "Algorithms", "JavaScript", "SCSS"],
       description:
         "Engineered 'Smart Orient' algorithms utilizing Monotone Chain convex hull analysis and weighted cost heuristics to automate optimal build orientation. Implemented 'AI Planar Slicing' via spatial grid discretization and surface normal deviation analysis to dynamically modulate layer thickness. Architected 'MotoMind', an agentic AI integration utilizing Gemini 2.5 Flash.",
       link: "#",
@@ -149,8 +149,8 @@ export const resumeData = {
       description:
         "Designed a hat-stiffened fuselage in Siemens NX and validated structural integrity via linear static FEA (NX Nastran) under 1000 lbf compressive loads. Conducted physical compression testing on 3D-printed prototypes to verify FEA predictions.",
       link: "#",
-      reportUrl: "#",
-      driveUrl: "#",
+      reportUrl: "/hat-stiffened-fuselage-report.pdf",
+      driveUrl: "https://drive.google.com/drive/folders/1MDdPARtAlP-wBT22vROemvg7892gpQAC?usp=sharing",
     },
     {
       title: "Rescue Assistance Rover (RAR)",
