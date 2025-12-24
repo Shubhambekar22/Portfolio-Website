@@ -2,61 +2,91 @@
 
 import Section from "./Section";
 import { resumeData } from "@/data/resume";
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Github, Phone, MapPin, Share2, Contact as ContactIcon } from "lucide-react";
 
 export default function Contact() {
   return (
-    <Section id="contact" number="07" title="Establish Comms" subtitle="Contact Protocol">
-      <div className="max-w-2xl mx-auto text-center">
-         <p className="text-xl md:text-2xl text-slate-300 font-light mb-12">
-           I am currently available for new opportunities and collaborations in aerospace engineering and computational design. 
-         </p>
-
-         <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-            <a 
-              href={`mailto:${resumeData.personalInfo.email}`} 
-              className="group relative px-8 py-4 bg-cyan-600 text-white font-bold tracking-widest uppercase text-sm hover:bg-cyan-500 transition-colors w-full md:w-auto"
-            >
-               <span className="flex items-center justify-center gap-2">
-                 <Mail size={18} />
-                 Send Transmission
-               </span>
-            </a>
+    <Section id="contact" number="07" title="Establish Comms" subtitle="Contact Protocol" backgroundImage="/radar-dish.jpg" imageClassName="object-contain object-bottom opacity-70">
+      <div className="max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          {/* Contact Information Card */}
+          <div className="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-8 hover:border-cyan-500/30 transition-colors duration-300">
+            <div className="flex items-center gap-3 mb-8">
+              <ContactIcon className="text-cyan-500" size={24} />
+              <h3 className="text-xl font-bold text-white">Send Transmission</h3>
+            </div>
             
-            <div className="flex gap-4">
-                <a 
-                  href={resumeData.personalInfo.linkedin} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="p-4 border border-slate-700 text-slate-400 hover:text-white hover:border-cyan-500 transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin size={20} />
-                </a>
-                 <a 
-                  href={resumeData.personalInfo.github} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="p-4 border border-slate-700 text-slate-400 hover:text-white hover:border-cyan-500 transition-colors"
-                   aria-label="GitHub"
-                >
-                  <Github size={20} />
-                </a>
-            </div>
-         </div>
+            <div className="space-y-4">
+              {/* Phone */}
+              <a 
+                href={`tel:${resumeData.personalInfo.phone}`}
+                className="bg-slate-800/50 border border-transparent rounded-lg p-4 flex items-center gap-4 hover:bg-slate-800 hover:border-cyan-400 hover:shadow-[0_0_15px_rgba(6,182,212,0.1)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group"
+              >
+                <div className="bg-slate-950 p-2 rounded-full text-cyan-500 border border-slate-700/50 group-hover:text-white group-hover:border-cyan-400 group-hover:bg-cyan-500/20 transition-colors duration-300">
+                  <Phone size={20} />
+                </div>
+                <span className="text-slate-300 group-hover:text-white transition-colors duration-300 font-mono text-sm sm:text-base">{resumeData.personalInfo.phone}</span>
+              </a>
 
-         <div className="mt-16 pt-8 border-t border-slate-800/50">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm font-mono text-slate-500">
-               <div className="flex flex-col items-center md:items-end gap-1">
-                  <span className="text-cyan-500/50 uppercase text-[10px] tracking-widest">Base of Operations</span>
-                  <span>{resumeData.personalInfo.location}</span>
-               </div>
-               <div className="flex flex-col items-center md:items-start gap-1">
-                  <span className="text-cyan-500/50 uppercase text-[10px] tracking-widest">Direct Line</span>
-                  <span>{resumeData.personalInfo.phone}</span>
-               </div>
+              {/* Email */}
+              <a 
+                href={`mailto:${resumeData.personalInfo.email}`}
+                className="bg-slate-800/50 border border-transparent rounded-lg p-4 flex items-center gap-4 hover:bg-slate-800 hover:border-cyan-400 hover:shadow-[0_0_15px_rgba(6,182,212,0.1)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group"
+              >
+                <div className="bg-slate-950 p-2 rounded-full text-cyan-500 border border-slate-700/50 group-hover:text-white group-hover:border-cyan-400 group-hover:bg-cyan-500/20 transition-colors duration-300">
+                  <Mail size={20} />
+                </div>
+                <span className="text-slate-300 group-hover:text-white transition-colors duration-300 font-mono text-sm sm:text-base break-all">{resumeData.personalInfo.email}</span>
+              </a>
+
+              {/* Location */}
+              <div className="bg-slate-800/50 border border-transparent rounded-lg p-4 flex items-center gap-4 hover:bg-slate-800 hover:border-cyan-400 hover:shadow-[0_0_15px_rgba(6,182,212,0.1)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group cursor-default">
+                <div className="bg-slate-950 p-2 rounded-full text-cyan-500 border border-slate-700/50 group-hover:text-white group-hover:border-cyan-400 group-hover:bg-cyan-500/20 transition-colors duration-300">
+                  <MapPin size={20} />
+                </div>
+                <span className="text-slate-300 group-hover:text-white transition-colors duration-300 font-mono text-sm sm:text-base">{resumeData.personalInfo.location}</span>
+              </div>
             </div>
-         </div>
+          </div>
+
+          {/* Connect With Me Card */}
+          <div className="bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-8 hover:border-cyan-500/30 transition-colors duration-300">
+            <div className="flex items-center gap-3 mb-8">
+              <Share2 className="text-cyan-500" size={24} />
+              <h3 className="text-xl font-bold text-white">Connect With Me</h3>
+            </div>
+            
+            <div className="space-y-4">
+              {/* LinkedIn */}
+              <a 
+                href={resumeData.personalInfo.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-slate-800/50 border border-transparent rounded-lg p-4 flex items-center gap-4 hover:bg-slate-800 hover:border-cyan-400 hover:shadow-[0_0_15px_rgba(6,182,212,0.1)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group"
+              >
+                <div className="bg-slate-950 p-2 rounded-full text-cyan-500 border border-slate-700/50 group-hover:text-white group-hover:border-cyan-400 group-hover:bg-cyan-500/20 transition-colors duration-300">
+                  <Linkedin size={20} />
+                </div>
+                <span className="text-slate-300 group-hover:text-white transition-colors duration-300 font-medium">LinkedIn</span>
+              </a>
+
+              {/* GitHub */}
+              <a 
+                href={resumeData.personalInfo.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-slate-800/50 border border-transparent rounded-lg p-4 flex items-center gap-4 hover:bg-slate-800 hover:border-cyan-400 hover:shadow-[0_0_15px_rgba(6,182,212,0.1)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group"
+              >
+                <div className="bg-slate-950 p-2 rounded-full text-cyan-500 border border-slate-700/50 group-hover:text-white group-hover:border-cyan-400 group-hover:bg-cyan-500/20 transition-colors duration-300">
+                  <Github size={20} />
+                </div>
+                <span className="text-slate-300 group-hover:text-white transition-colors duration-300 font-medium">GitHub</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
       </div>
     </Section>
   );

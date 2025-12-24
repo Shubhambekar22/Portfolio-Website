@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
 import { cn } from "@/lib/utils"; 
+import Image from "next/image";
 
 interface SectionProps {
   id: string;
@@ -11,11 +12,26 @@ interface SectionProps {
   title?: string;
   subtitle?: string;
   number?: string;
+  backgroundImage?: string;
+  imageClassName?: string;
 }
 
-export default function Section({ id, className, children, title, subtitle, number }: SectionProps) {
+export default function Section({ id, className, children, title, subtitle, number, backgroundImage, imageClassName }: SectionProps) {
   return (
-    <section id={id} className={cn("py-20 md:py-32 relative overflow-hidden", className)}>
+    <section id={id} className={cn("py-12 md:py-20 relative overflow-hidden", className)}>
+      {backgroundImage && (
+        <div className="absolute inset-0 w-full h-full z-0 bg-slate-950">
+          <Image
+            src={backgroundImage}
+            alt="Section Background"
+            fill
+            className={cn("object-cover opacity-20 md:opacity-30", imageClassName)}
+            quality={90}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-950/80 to-slate-950/90" />
+        </div>
+      )}
+      
       <div className="container px-6 mx-auto relative z-10">
         {(title || number) && (
           <motion.div 
@@ -32,7 +48,7 @@ export default function Section({ id, className, children, title, subtitle, numb
             )}
             <div className="flex flex-col">
               {title && (
-                 <h2 className="text-3xl md:text-5xl font-display font-bold text-slate-100 uppercase tracking-tight">
+                <h2 className="text-3xl md:text-5xl font-display font-bold text-slate-100 uppercase tracking-tight">
                   {title}
                 </h2>
               )}

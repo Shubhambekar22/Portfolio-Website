@@ -8,7 +8,7 @@ export const resumeData = {
     phone: "+1 (213) 245 3458",
     location: "Los Angeles, California",
     linkedin: "https://linkedin.com/in/shubham-ambekar", // Placeholder, user to update
-    github: "https://github.com/shubham-ambekar", // Placeholder
+    github: "https://github.com/Shubhambekar22", // Placeholder
   },
   education: [
     {
