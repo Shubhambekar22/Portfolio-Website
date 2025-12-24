@@ -138,6 +138,9 @@ export const resumeData = {
       description:
         "Engineered 'Smart Orient' algorithms utilizing Monotone Chain convex hull analysis and weighted cost heuristics to automate optimal build orientation. Implemented 'AI Planar Slicing' via spatial grid discretization and surface normal deviation analysis to dynamically modulate layer thickness. Architected 'MotoMind', an agentic AI integration utilizing Gemini 2.5 Flash.",
       link: "#",
+      demoUrl: "#",
+      repoUrl: "https://github.com/Shubhambekar22/AI-Assisted-Palanar-Slicing-For-3D-Printing",
+      video: "/demo-video.mp4",
     },
     {
       title: "Design, FEA & 3D Printing of Hat Stiffened Fuselage",
@@ -146,6 +149,8 @@ export const resumeData = {
       description:
         "Designed a hat-stiffened fuselage in Siemens NX and validated structural integrity via linear static FEA (NX Nastran) under 1000 lbf compressive loads. Conducted physical compression testing on 3D-printed prototypes to verify FEA predictions.",
       link: "#",
+      reportUrl: "#",
+      driveUrl: "#",
     },
     {
       title: "Rescue Assistance Rover (RAR)",
