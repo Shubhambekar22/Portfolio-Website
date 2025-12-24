@@ -11,9 +11,21 @@ export default function Hero() {
     <section className="relative min-h-screen pt-24 pb-10 flex flex-col items-center justify-center overflow-hidden bg-slate-950">
       
       {/* Background Effects */}
-      <div className="absolute inset-0 z-0">
-         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(6,182,212,0.15)_0%,transparent_50%)]" />
-         <div className="absolute inset-0 bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-20" />
+      {/* Video Background */}
+      <div className="absolute inset-0 z-0 bg-slate-950">
+         <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline 
+            className="absolute inset-0 w-full h-full object-cover opacity-50 scale-90"
+         >
+            <source src="/background.mp4" type="video/mp4" />
+         </video>
+         {/* Seamless vignette overlay */}
+         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#020617_85%)]" />
+         {/* Text contrast overlay */}
+         <div className="absolute inset-0 bg-slate-950/30" />
       </div>
 
       <div className="container relative z-10 px-6 flex flex-col items-center">
