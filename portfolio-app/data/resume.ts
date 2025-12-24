@@ -159,6 +159,8 @@ export const resumeData = {
       description:
         "Designed and developed a robust disaster response vehicle equipped with advanced sensors and autonomous navigation. Engineered a rocker-bogie suspension system with Ackerman steering for superior mobility across complex terrains.",
       link: "#",
+      reportUrl: "/rescue-assistant-robot-report.pdf",
+      driveUrl: "https://drive.google.com/drive/folders/1013uHI31SKF-DtWhmt8CdNV7oafP79oL?usp=sharing",
     },
     {
       title: "Supra SAE Vehicle Design",
