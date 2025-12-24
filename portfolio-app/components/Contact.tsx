@@ -6,7 +6,7 @@ import { Mail, Linkedin, Github } from "lucide-react";
 
 export default function Contact() {
   return (
-    <Section id="contact" number="06" title="Establish Comms" subtitle="Contact Protocol">
+    <Section id="contact" number="07" title="Establish Comms" subtitle="Contact Protocol">
       <div className="max-w-2xl mx-auto text-center">
          <p className="text-xl md:text-2xl text-slate-300 font-light mb-12">
            I am currently available for new opportunities and collaborations in aerospace engineering and computational design. 
