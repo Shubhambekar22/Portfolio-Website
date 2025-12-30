@@ -17,7 +17,7 @@ export const resumeData = {
       date: "Jan 2025 - Dec 2026",
       location: "Los Angeles, CA, USA",
       gpa: "4.0/4.0",
-      logo: "/usc-logo.png",
+      logo: "/Portfolio-Website/usc-logo.png",
       coursework: [
         "Design for Manufacturing Assembly",
         "Advance Mechanical Design",
@@ -42,7 +42,7 @@ export const resumeData = {
       date: "Aug 2021 – Jul 2024",
       location: "Pune, India",
       gpa: "3.4/4.0", // Placeholder or estimated, I don't have this. I'll add a placeholder or omit if optional. The design shows GPA. I'll add a placeholder.
-      logo: "/sppu-logo.png",
+      logo: "/Portfolio-Website/sppu-logo.png",
       coursework: [
         "Kinematics of Machinery",
         "Applied Thermodynamics",
@@ -62,7 +62,7 @@ export const resumeData = {
       date: "2017 - 2021",
       location: "Pune, India",
       gpa: "First Class w/ Distinction",
-      logo: "/pcet-logo.jpg",
+      logo: "/Portfolio-Website/pcet-logo.jpg",
       coursework: [
         "Introduction to Heat Transfer",
         "Solid Mechanics",
@@ -140,7 +140,7 @@ export const resumeData = {
       link: "#",
       demoUrl: "#",
       repoUrl: "https://github.com/Shubhambekar22/AI-Assisted-Palanar-Slicing-For-3D-Printing",
-      video: "/demo-video.mp4",
+      video: "/Portfolio-Website/demo-video.mp4",
     },
     {
       title: "Design, FEA & 3D Printing of Hat Stiffened Fuselage",
@@ -149,7 +149,7 @@ export const resumeData = {
       description:
         "Designed a hat-stiffened fuselage in Siemens NX and validated structural integrity via linear static FEA (NX Nastran) under 1000 lbf compressive loads. Conducted physical compression testing on 3D-printed prototypes to verify FEA predictions.",
       link: "#",
-      reportUrl: "/hat-stiffened-fuselage-report.pdf",
+      reportUrl: "/Portfolio-Website/hat-stiffened-fuselage-report.pdf",
       driveUrl: "https://drive.google.com/drive/folders/1MDdPARtAlP-wBT22vROemvg7892gpQAC?usp=sharing",
     },
     {
@@ -159,7 +159,7 @@ export const resumeData = {
       description:
         "Designed and developed a robust disaster response vehicle equipped with advanced sensors and autonomous navigation. Engineered a rocker-bogie suspension system with Ackerman steering for superior mobility across complex terrains.",
       link: "#",
-      reportUrl: "/rescue-assistant-robot-report.pdf",
+      reportUrl: "/Portfolio-Website/rescue-assistant-robot-report.pdf",
       driveUrl: "https://drive.google.com/drive/folders/1013uHI31SKF-DtWhmt8CdNV7oafP79oL?usp=sharing",
     },
     {

@@ -64,7 +64,7 @@ export default function Navbar() {
           ))}
           <div className="flex items-center gap-3">
             <a
-              href="/resume.pdf"
+              href="/Portfolio-Website/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 text-xs font-bold text-slate-200 border border-slate-700 hover:border-cyan-500 hover:text-white transition-colors uppercase tracking-wider rounded flex items-center gap-2"
@@ -73,7 +73,7 @@ export default function Navbar() {
               <span>View Resume</span>
             </a>
             <a
-              href="/resume.pdf"
+              href="/Portfolio-Website/resume.pdf"
               download="Shubham_Ambekar_Resume.pdf"
               className="px-4 py-2 text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 transition-colors uppercase tracking-wider rounded flex items-center gap-2"
             >
@@ -115,7 +115,7 @@ export default function Navbar() {
               ))}
                <div className="flex flex-col gap-3 w-full max-w-xs mt-4">
                  <a
-                  href="/resume.pdf"
+                  href="/Portfolio-Website/resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 text-sm font-bold text-slate-200 border border-slate-700 hover:border-cyan-500 hover:text-white transition-colors uppercase tracking-wider flex items-center justify-center gap-2"
@@ -125,7 +125,7 @@ export default function Navbar() {
                    View Resume
                 </a>
                  <a
-                  href="/resume.pdf"
+                  href="/Portfolio-Website/resume.pdf"
                   download="Shubham_Ambekar_Resume.pdf"
                   className="px-6 py-3 text-sm font-bold text-white bg-blue-600 hover:bg-blue-500 transition-colors uppercase tracking-wider flex items-center justify-center gap-2"
                   onClick={() => setIsOpen(false)}

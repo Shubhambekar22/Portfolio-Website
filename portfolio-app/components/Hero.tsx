@@ -20,7 +20,7 @@ export default function Hero() {
             playsInline 
             className="absolute inset-0 w-full h-full object-cover opacity-50 scale-90"
          >
-            <source src="/background.mp4" type="video/mp4" />
+            <source src="/Portfolio-Website/background.mp4" type="video/mp4" />
          </video>
          {/* Seamless vignette overlay */}
          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#020617_85%)]" />
@@ -38,7 +38,7 @@ export default function Hero() {
             className="w-36 h-36 rounded-full border-4 border-slate-800/80 bg-slate-900 mb-6 relative overflow-hidden shadow-2xl shadow-cyan-900/20 group"
         >
              <Image 
-                src="/profile.jpg" 
+                src="/Portfolio-Website/profile.jpg" 
                 alt={resumeData.personalInfo.name} 
                 fill 
                 className="object-cover object-top group-hover:scale-105 transition-transform duration-500" 
@@ -72,7 +72,7 @@ export default function Hero() {
         >
             <div className="rounded-2xl bg-white/5 border border-white/10 p-4 backdrop-blur-md flex items-center gap-4 hover:bg-white/10 transition-colors">
                 <div className="h-10 w-10 relative flex-shrink-0 bg-white/90 rounded-lg overflow-hidden p-1">
-                    <Image src="/usc-logo.png" alt="USC Logo" fill className="object-contain" />
+                    <Image src="/Portfolio-Website/usc-logo.png" alt="USC Logo" fill className="object-contain" />
                 </div>
                 <div>
                    <div className="text-[10px] text-slate-400 uppercase tracking-wider font-semibold">Masters</div>
@@ -82,7 +82,7 @@ export default function Hero() {
 
             <div className="rounded-2xl bg-white/5 border border-white/10 p-4 backdrop-blur-md flex items-center gap-4 hover:bg-white/10 transition-colors">
                 <div className="h-10 w-10 relative flex-shrink-0 bg-white/90 rounded-lg overflow-hidden p-1">
-                     <Image src="/sppu-logo.png" alt="SPPU Logo" fill className="object-contain" />
+                     <Image src="/Portfolio-Website/sppu-logo.png" alt="SPPU Logo" fill className="object-contain" />
                 </div>
                  <div>
                    <div className="text-[10px] text-slate-400 uppercase tracking-wider font-semibold">Bachelors</div>
