@@ -140,7 +140,7 @@ export const resumeData = {
       link: "#",
       demoUrl: "#",
       repoUrl: "https://github.com/Shubhambekar22/AI-Assisted-Palanar-Slicing-For-3D-Printing",
-      video: "/Portfolio-Website/demo-video.mp4",
+      video: "/demo-video.mp4",
     },
     {
       title: "Design, FEA & 3D Printing of Hat Stiffened Fuselage",
@@ -149,7 +149,7 @@ export const resumeData = {
       description:
         "Designed a hat-stiffened fuselage in Siemens NX and validated structural integrity via linear static FEA (NX Nastran) under 1000 lbf compressive loads. Conducted physical compression testing on 3D-printed prototypes to verify FEA predictions.",
       link: "#",
-      reportUrl: "/Portfolio-Website/hat-stiffened-fuselage-report.pdf",
+      reportUrl: "/hat-stiffened-fuselage-report.pdf",
       driveUrl: "https://drive.google.com/drive/folders/1MDdPARtAlP-wBT22vROemvg7892gpQAC?usp=sharing",
     },
     {
@@ -159,7 +159,7 @@ export const resumeData = {
       description:
         "Designed and developed a robust disaster response vehicle equipped with advanced sensors and autonomous navigation. Engineered a rocker-bogie suspension system with Ackerman steering for superior mobility across complex terrains.",
       link: "#",
-      reportUrl: "/Portfolio-Website/rescue-assistant-robot-report.pdf",
+      reportUrl: "/rescue-assistant-robot-report.pdf",
       driveUrl: "https://drive.google.com/drive/folders/1013uHI31SKF-DtWhmt8CdNV7oafP79oL?usp=sharing",
     },
     {
