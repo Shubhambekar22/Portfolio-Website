@@ -22,7 +22,7 @@ export default function LoadingScreen() {
       <div className="relative w-64 h-64 md:w-96 md:h-96 mix-blend-screen">
         {/* Using unoptimized=true for gifs to ensure they animate correctly */}
         <Image 
-          src="/Portfolio-Website/preloader_fast.gif" 
+          src="/preloader_fast.gif" 
           alt="Loading..." 
           fill
           className="object-contain brightness-75 contrast-125"

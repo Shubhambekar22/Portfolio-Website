@@ -17,7 +17,7 @@ export const resumeData = {
       date: "Jan 2025 - Dec 2026",
       location: "Los Angeles, CA, USA",
       gpa: "4.0/4.0",
-      logo: "/Portfolio-Website/usc-logo.png",
+      logo: "/usc-logo.png",
       coursework: [
         "Design for Manufacturing Assembly",
         "Advance Mechanical Design",
@@ -42,7 +42,7 @@ export const resumeData = {
       date: "Aug 2021 – Jul 2024",
       location: "Pune, India",
       gpa: "3.4/4.0", // Placeholder or estimated, I don't have this. I'll add a placeholder or omit if optional. The design shows GPA. I'll add a placeholder.
-      logo: "/Portfolio-Website/sppu-logo.png",
+      logo: "/sppu-logo.png",
       coursework: [
         "Kinematics of Machinery",
         "Applied Thermodynamics",
@@ -62,7 +62,7 @@ export const resumeData = {
       date: "2017 - 2021",
       location: "Pune, India",
       gpa: "First Class w/ Distinction",
-      logo: "/Portfolio-Website/pcet-logo.jpg",
+      logo: "/pcet-logo.jpg",
       coursework: [
         "Introduction to Heat Transfer",
         "Solid Mechanics",
