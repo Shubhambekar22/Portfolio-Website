@@ -5,7 +5,7 @@ import { FileText, Briefcase, GraduationCap, School, Mail, ChevronRight } from "
 import { resumeData } from "@/data/resume";
 import Link from "next/link";
 import Image from "next/image";
-import { sendGAEvent } from "@next/third-parties/google";
+import { sendGAEvent } from "@/lib/gtag";
 
 export default function Hero() {
   return (

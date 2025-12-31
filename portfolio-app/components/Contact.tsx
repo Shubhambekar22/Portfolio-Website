@@ -3,7 +3,7 @@
 import Section from "./Section";
 import { resumeData } from "@/data/resume";
 import { Mail, Linkedin, Github, Phone, MapPin, Share2, Contact as ContactIcon } from "lucide-react";
-import { sendGAEvent } from "@next/third-parties/google";
+import { sendGAEvent } from "@/lib/gtag";
 
 export default function Contact() {
   return (

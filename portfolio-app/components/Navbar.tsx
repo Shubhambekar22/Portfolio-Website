@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Rocket, Eye, Download } from "lucide-react";
-import { sendGAEvent } from "@next/third-parties/google";
+import { sendGAEvent } from "@/lib/gtag";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

@@ -5,7 +5,7 @@ import { resumeData } from "@/data/resume";
 import { ArrowUpRight, Github, ExternalLink, Play, X, FileText } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { sendGAEvent } from "@next/third-parties/google";
+import { sendGAEvent } from "@/lib/gtag";
 
 export default function Projects() {
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
