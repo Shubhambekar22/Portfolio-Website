@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/third-parties": "^16.1.1",
+    "@next/third-parties": "^14.2.35",
     "@react-three/drei": "^9.99.0",
     "@react-three/fiber": "^8.15.16",
     "clsx": "^2.1.0",
