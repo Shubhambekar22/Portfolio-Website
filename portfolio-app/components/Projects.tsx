@@ -5,9 +5,14 @@ import { resumeData } from "@/data/resume";
 import { ArrowUpRight, Github, ExternalLink, Play, X, FileText } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { sendGAEvent } from "@next/third-parties/google";
 
 export default function Projects() {
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
+
+  const handleProjectClick = (projectTitle: string, type: string) => {
+    sendGAEvent({ event: "project_click", value: `${projectTitle} - ${type}` });
+  };
 
   return (
     <Section id="projects" number="05" title="Case Studies" subtitle="Selected Projects">
@@ -49,7 +54,10 @@ export default function Projects() {
                   {/* @ts-ignore */}
                   {project.video ? (
                     <button 
-                      onClick={() => setActiveVideo(project.video)}
+                      onClick={() => {
+                        setActiveVideo(project.video);
+                        handleProjectClick(project.title, "video_demo");
+                      }}
                       className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-blue-600 text-white text-sm font-bold uppercase tracking-wider hover:bg-blue-700 hover:-translate-y-1 transition-all duration-300"
                     >
                       <Play size={16} className="fill-current" />
@@ -61,6 +69,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-blue-600 text-white text-sm font-bold uppercase tracking-wider hover:bg-blue-700 hover:-translate-y-1 transition-all duration-300"
+                      onClick={() => handleProjectClick(project.title, "demo_link")}
                     >
                       <Play size={16} className="fill-current" />
                       View Demo
@@ -73,6 +82,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 px-5 py-2.5 rounded-lg border border-slate-700 bg-slate-950/50 text-white text-sm font-bold uppercase tracking-wider hover:bg-slate-900 hover:border-cyan-500/50 hover:-translate-y-1 transition-all duration-300"
+                      onClick={() => handleProjectClick(project.title, "github_repo")}
                     >
                       <Github size={16} />
                       Github
@@ -86,6 +96,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-blue-600 text-white text-sm font-bold uppercase tracking-wider hover:bg-blue-700 hover:-translate-y-1 transition-all duration-300"
+                      onClick={() => handleProjectClick(project.title, "report_pdf")}
                     >
                       <FileText size={16} className="fill-current" />
                       View Report
@@ -98,6 +109,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 px-5 py-2.5 rounded-lg border border-slate-700 bg-slate-950/50 text-white text-sm font-bold uppercase tracking-wider hover:bg-slate-900 hover:border-cyan-500/50 hover:-translate-y-1 transition-all duration-300"
+                      onClick={() => handleProjectClick(project.title, "google_drive")}
                     >
                       <svg 
                         viewBox="0 0 24 24" 
@@ -110,7 +122,11 @@ export default function Projects() {
                     </a>
                   )}
                   {!project.demoUrl && !project.repoUrl && !project.video && !project.reportUrl && !project.driveUrl && (
-                    <a href={project.link} className="text-slate-500 hover:text-cyan-400 transition-colors">
+                    <a 
+                      href={project.link} 
+                      className="text-slate-500 hover:text-cyan-400 transition-colors"
+                      onClick={() => handleProjectClick(project.title, "generic_link")}
+                    >
                       <ArrowUpRight size={20} />
                     </a>
                   )}

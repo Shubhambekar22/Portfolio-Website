@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Rajdhani, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import LoadingScreen from "../components/LoadingScreen";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 const rajdhani = Rajdhani({ 
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${rajdhani.variable} ${robotoMono.variable} font-sans bg-slate-950 text-slate-200 antialiased selection:bg-cyan-500/30 selection:text-cyan-200 overflow-x-hidden`}>
         <LoadingScreen />
         {children}
+        <GoogleAnalytics gaId="G-PC9KZTE42L" />
       </body>
     </html>
   );
