@@ -3,6 +3,7 @@
 import Section from "./Section";
 import { resumeData } from "@/data/resume";
 import { Mail, Linkedin, Github, Phone, MapPin, Share2, Contact as ContactIcon } from "lucide-react";
+import { sendGAEvent } from "@/lib/gtag";
 
 export default function Contact() {
   return (
@@ -22,6 +23,7 @@ export default function Contact() {
               <a 
                 href={`tel:${resumeData.personalInfo.phone}`}
                 className="bg-slate-800/50 border border-transparent rounded-lg p-4 flex items-center gap-4 hover:bg-slate-800 hover:border-cyan-400 hover:shadow-[0_0_15px_rgba(6,182,212,0.1)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group"
+                onClick={() => sendGAEvent({ event: "contact_click", value: "phone" })}
               >
                 <div className="bg-slate-950 p-2 rounded-full text-cyan-500 border border-slate-700/50 group-hover:text-white group-hover:border-cyan-400 group-hover:bg-cyan-500/20 transition-colors duration-300">
                   <Phone size={20} />
@@ -33,6 +35,7 @@ export default function Contact() {
               <a 
                 href={`mailto:${resumeData.personalInfo.email}`}
                 className="bg-slate-800/50 border border-transparent rounded-lg p-4 flex items-center gap-4 hover:bg-slate-800 hover:border-cyan-400 hover:shadow-[0_0_15px_rgba(6,182,212,0.1)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group"
+                onClick={() => sendGAEvent({ event: "contact_click", value: "email" })}
               >
                 <div className="bg-slate-950 p-2 rounded-full text-cyan-500 border border-slate-700/50 group-hover:text-white group-hover:border-cyan-400 group-hover:bg-cyan-500/20 transition-colors duration-300">
                   <Mail size={20} />
@@ -64,6 +67,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-slate-800/50 border border-transparent rounded-lg p-4 flex items-center gap-4 hover:bg-slate-800 hover:border-cyan-400 hover:shadow-[0_0_15px_rgba(6,182,212,0.1)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group"
+                onClick={() => sendGAEvent({ event: "contact_click", value: "linkedin" })}
               >
                 <div className="bg-slate-950 p-2 rounded-full text-cyan-500 border border-slate-700/50 group-hover:text-white group-hover:border-cyan-400 group-hover:bg-cyan-500/20 transition-colors duration-300">
                   <Linkedin size={20} />
@@ -77,6 +81,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-slate-800/50 border border-transparent rounded-lg p-4 flex items-center gap-4 hover:bg-slate-800 hover:border-cyan-400 hover:shadow-[0_0_15px_rgba(6,182,212,0.1)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group"
+                onClick={() => sendGAEvent({ event: "contact_click", value: "github" })}
               >
                 <div className="bg-slate-950 p-2 rounded-full text-cyan-500 border border-slate-700/50 group-hover:text-white group-hover:border-cyan-400 group-hover:bg-cyan-500/20 transition-colors duration-300">
                   <Github size={20} />
