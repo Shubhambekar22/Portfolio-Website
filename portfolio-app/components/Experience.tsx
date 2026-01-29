@@ -34,7 +34,7 @@ export default function Experience() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mt-16 w-full max-w-4xl mx-auto">
            <div className="flex justify-center md:justify-end">
             <a 
-                href="/resume.pdf" 
+                href="/Shubham_Ambekar_Resume.pdf" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 px-8 py-3 rounded-lg border border-slate-700 bg-slate-950/50 text-white font-bold uppercase tracking-wider hover:bg-slate-900 hover:-translate-y-1 transition-all duration-300 w-full md:w-auto"
@@ -49,7 +49,7 @@ export default function Experience() {
           
            <div className="flex justify-center md:justify-start">
             <a 
-                href="/resume.pdf" 
+                href="/Shubham_Ambekar_Resume.pdf" 
                 download="Shubham_Ambekar_Resume.pdf"
                 className="flex items-center justify-center gap-2 px-8 py-3 rounded-lg bg-white text-blue-600 font-bold uppercase tracking-wider hover:bg-blue-50 hover:-translate-y-1 transition-all duration-300 w-full md:w-auto"
             >

@@ -114,7 +114,7 @@ export default function Hero() {
             className="flex flex-col md:flex-row items-center gap-4"
         >
              <Link 
-                href="/resume.pdf" 
+                href="/Shubham_Ambekar_Resume.pdf" 
                 target="_blank"
                 className="px-7 py-3.5 bg-white text-slate-950 font-bold rounded-lg hover:bg-cyan-50 hover:-translate-y-1 transition-all flex items-center gap-2 group min-w-[150px] justify-center text-base"
                 onClick={() => sendGAEvent({ event: "resume_view", value: "hero" })}
