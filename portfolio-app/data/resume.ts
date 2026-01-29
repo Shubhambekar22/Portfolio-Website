@@ -4,7 +4,7 @@ export const resumeData = {
     title: "Aerospace & Mechanical Engineer",
     tagline:
       "Engineering Precision through Computational Design & Advanced Manufacturing",
-    email: "sambekar@usc.edu",
+    email: "sambekar1001@gmail.com",
     phone: "+1 (213) 245 3458",
     location: "Los Angeles, California",
     linkedin: "https://linkedin.com/in/shubham-ambekar", // Placeholder, user to update
