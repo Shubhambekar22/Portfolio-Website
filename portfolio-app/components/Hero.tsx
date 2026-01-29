@@ -113,7 +113,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="flex flex-col md:flex-row items-center gap-4"
         >
-             <Link 
+             <a 
                 href="/Shubham_Ambekar_Resume.pdf" 
                 target="_blank"
                 className="px-7 py-3.5 bg-white text-slate-950 font-bold rounded-lg hover:bg-cyan-50 hover:-translate-y-1 transition-all flex items-center gap-2 group min-w-[150px] justify-center text-base"
@@ -121,23 +121,23 @@ export default function Hero() {
              >
                 <FileText size={18} />
                 <span>View Resume</span>
-             </Link>
+             </a>
 
-             <Link 
+             <a 
                 href="#projects" 
                 className="px-7 py-3.5 bg-slate-900 border border-slate-700 text-white font-bold rounded-lg hover:border-cyan-500/50 hover:bg-slate-800 hover:-translate-y-1 transition-all flex items-center gap-2 min-w-[150px] justify-center text-base"
                 onClick={() => sendGAEvent({ event: "hero_cta_click", value: "view_work" })}
              >
                 <span>View My Work</span>
-             </Link>
+             </a>
 
-             <Link 
+             <a 
                 href="#contact" 
                 className="px-7 py-3.5 bg-transparent border border-slate-700 text-slate-300 font-bold rounded-lg hover:border-white hover:text-white hover:-translate-y-1 transition-all flex items-center gap-2 min-w-[150px] justify-center text-base"
                 onClick={() => sendGAEvent({ event: "hero_cta_click", value: "contact" })}
              >
                 <span>Get In Touch</span>
-             </Link>
+             </a>
         </motion.div>
 
       </div>

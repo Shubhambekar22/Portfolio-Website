@@ -57,7 +57,7 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <Link
+            <a
               key={link.name}
               href={link.href}
               className="relative text-sm font-mono text-slate-400 hover:text-cyan-400 transition-colors uppercase tracking-widest group"
@@ -70,7 +70,7 @@ export default function Navbar() {
                 {link.name}
               </span>
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-cyan-400 group-hover:w-full transition-all duration-300" />
-            </Link>
+            </a>
           ))}
           <div className="flex items-center gap-3">
             <a
@@ -116,7 +116,7 @@ export default function Navbar() {
           >
             <div className="flex flex-col items-center py-8 gap-6">
               {navLinks.map((link) => (
-                <Link
+                <a
                   key={link.name}
                   href={link.href}
                   className="text-lg font-display tracking-widest text-slate-300 hover:text-cyan-400 transition-colors"
@@ -126,7 +126,7 @@ export default function Navbar() {
                   }}
                 >
                   {link.name}
-                </Link>
+                </a>
               ))}
                <div className="flex flex-col gap-3 w-full max-w-xs mt-4">
                 <a
