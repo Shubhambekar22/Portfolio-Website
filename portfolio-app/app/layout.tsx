@@ -24,7 +24,7 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shubham Ambekar | Aerospace Engineer",
+  title: "Shubham Ambekar | Aerospace & Mechanical Engineer",
   description: "Portfolio of Shubham Ambekar, specializing in Mechanical Engineering, CFD, and Computational Design.",
 };
 
