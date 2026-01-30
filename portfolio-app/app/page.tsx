@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-950 relative selection:bg-cyan-500/30 selection:text-cyan-200">
+    <main className="min-h-screen bg-transparent relative selection:bg-cyan-500/30 selection:text-cyan-200">
       <Navbar />
       <Hero />
       <About />

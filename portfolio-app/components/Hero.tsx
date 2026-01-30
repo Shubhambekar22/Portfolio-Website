@@ -6,24 +6,14 @@ import { resumeData } from "@/data/resume";
 import Link from "next/link";
 import Image from "next/image";
 import { sendGAEvent } from "@/lib/gtag";
-import MechanicalBackground from "./MechanicalBackground";
+
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen pt-24 pb-10 flex flex-col items-center justify-center overflow-hidden bg-slate-950">
+    <section className="relative min-h-screen pt-24 pb-10 flex flex-col items-center justify-center overflow-hidden bg-transparent">
       
       {/* Background Effects */}
       <div className="absolute inset-0 z-0">
-          <MechanicalBackground 
-             wireframe={false} 
-             rotationSpeed={2.5} 
-             size="full"
-             colorPalette={{
-               base: "#94a3b8", // slate-400
-               rim: "#06b6d4",  // cyan-500
-               bg: "transparent"
-             }}
-          />
          {/* Seamless vignette overlay */}
          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#020617_85%)] pointer-events-none" />
       </div>
