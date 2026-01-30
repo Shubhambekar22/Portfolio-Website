@@ -7,7 +7,7 @@ import { sendGAEvent } from "@/lib/gtag";
 
 export default function Contact() {
   return (
-    <Section id="contact" number="07" title="Establish Comms" subtitle="Contact Protocol" backgroundImage="/radar-dish.jpg" imageClassName="object-contain object-bottom opacity-70">
+    <Section id="contact" number="07" title="Establish Comms" subtitle="Contact Protocol">
       <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           
