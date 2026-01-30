@@ -74,15 +74,15 @@ export const resumeData = {
     },
   ],
   experience: [
+
     {
-      company: "Advance Composites & Design Lab",
-      role: "Composite Research Student",
+      company: "USC Formula SAE Racing Team",
+      role: "Mechanical Design Engineer",
       date: "Aug 2025 – Present",
-      location: "Los Angeles, CA",
+      location: "Los Angeles, USA",
       description: [
-        "Designing, manufacturing, and testing high-performance glass fiber and carbon fiber composite square beams for annual SAMPE student composites competition.",
-        "Specialized in vacuum infusion techniques and optimized lay-up schedules.",
-        "Performing ASTM standard mechanical testing to achieve maximum strength-to-weight ratios.",
+        "Working in vehicle design team for Supra SAE, overseeing CAD modeling, chassis optimization, and component integration using SolidWorks and ANSYS to enhance performance and safety.",
+        "Coordinating a multidisciplinary team to ensure manufacturability, weight reduction, and compliance with SAE design standards.",
       ],
     },
     {
@@ -195,6 +195,13 @@ export const resumeData = {
     other: ["Product Design", "Project Management", "Critical Reasoning"],
   },
   publications: [
+    {
+      title: "Advance Composites & Design Lab, Composite Student Researcher",
+      date: "Aug 2025 - Present",
+      description: [
+        "Designing, manufacturing, and testing high-performance glass fiber and carbon fiber composite square beams for annual SAMPE student composites competition. Specialized in vacuum infusion techniques, optimized lay-up schedules, and performing ASTM standard mechanical testing to achieve maximum strength-to-weight ratios.",
+      ],
+    },
     {
       title:
         "Design & Development of Rescue Assistance Rover for Land-Based Operations",
